@@ -2,7 +2,8 @@ const User = require("../models/User");
 const Redis = require("ioredis");
 const { promisify } = require("util");
 const redis = new Redis({
-  host: "redditus-caching.7iw0vl.clustercfg.eun1.cache.amazonaws.com",
+  // host: "redditus-caching.7iw0vl.clustercfg.eun1.cache.amazonaws.com",
+  host: "redditus-redis-cache.7iw0vl.clustercfg.eun1.cache.amazonaws.com",
   port: 6379,
   name: "redditus-caching",
   protected: "no",
